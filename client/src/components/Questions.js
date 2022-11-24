@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function () {
+export default function Questions() {
 	const [checked, setChecked] = useState(undefined);
 	function onSelect() {
 		console.log('radio button change');
@@ -13,7 +13,7 @@ export default function () {
 				<li>
 					<input
 						type="radio"
-						value={true}
+						value={false}
 						name="options"
 						id="q1-option"
 						onChange={onSelect()}
@@ -21,7 +21,7 @@ export default function () {
 					<label className="text-primary" htmlFor="q1-option">
 						option
 					</label>
-					<div className="check che"></div>
+					<div className="check checked"></div>
 				</li>
 			</ul>
 		</div>
