@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 /** import components */
 import Main from './Main';
 import Quiz from './Quiz';
-import React from 'react';
+import Result from 'react';
 /** react routers */
 const router = createBrowserRouter([
 	{
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: '/result',
-		element: <Quiz> </Quiz>,
+		element: <Result> </Result>,
 	},
 ]);
 
