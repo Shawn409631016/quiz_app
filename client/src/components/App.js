@@ -1,10 +1,10 @@
-import "../styles/App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import '../styles/App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 /** import components */
 import Main from './Main';
 import Quiz from './Quiz';
-import Result from 'react';
+import Result from './Result';
 /** react routers */
 const router = createBrowserRouter([
 	{
@@ -22,11 +22,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+	return (
+		<>
+			<RouterProvider router={router} />
+		</>
+	);
 }
 
 export default App;
