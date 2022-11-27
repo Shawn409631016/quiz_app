@@ -14,14 +14,8 @@ export default function Quiz() {
 	const { queue, trace } = useSelector((state) => state.questions);
 	const dispatch = useDispatch();
 
-	useEffect(() => {
-		console.log(result);
-	});
-
 	/*next button event handler*/
 	function onNext() {
-		// console.log('On next click');
-
 		if (trace < queue.length) {
 			/**update the trace value by one using MoveNextAction */
 			dispatch(MoveNextQuestion());
@@ -31,6 +25,9 @@ export default function Quiz() {
 				dispatch(PushAnswer(check));
 			}
 		}
+
+		/** reset the value of the checked variable */
+		setChecked(undefined);
 	}
 
 	/*Prev button event handler*/
