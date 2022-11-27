@@ -28,3 +28,6 @@ export default [
 		options: ['stringify()', 'parse()', 'convert()'],
 	},
 ];
+
+/** right answers of the questions */
+export const answers = [0, 1, 2, 1, 0];
